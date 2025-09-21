@@ -315,6 +315,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
       onTap: () {},
       child: Container(
         width: 150,
+        height: 150,
         margin: const EdgeInsets.only(right: 16),
         decoration: BoxDecoration(
           color: Colors.white,
@@ -347,23 +348,26 @@ class DashboardView extends StackedView<DashboardViewModel> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(12),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    item.name,
-                    style: bodyStyle(context)
-                        .copyWith(fontWeight: FontWeight.bold),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  Text(
-                    '\u20b9${item.price}',
-                    style: bodySmallStyle(context),
-                  ),
-                ],
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(8),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      item.name,
+                      style: bodyStyle(context)
+                          .copyWith(fontWeight: FontWeight.bold),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    Text(
+                      '\u20b9${item.price}',
+                      style: bodySmallStyle(context),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

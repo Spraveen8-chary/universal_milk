@@ -7,6 +7,8 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:flutter/material.dart' as _i10;
 import 'package:flutter/material.dart';
+import 'package:stacked/stacked.dart' as _i1;
+import 'package:stacked_services/stacked_services.dart' as _i11;
 import 'package:universal_milk/features/auth/auth_view.dart' as _i4;
 import 'package:universal_milk/features/calendar/calendar_view.dart' as _i6;
 import 'package:universal_milk/features/chat/chat_view.dart' as _i8;
@@ -15,8 +17,6 @@ import 'package:universal_milk/features/home/home_view.dart' as _i2;
 import 'package:universal_milk/features/payment/payment_view.dart' as _i7;
 import 'package:universal_milk/features/products/products_view.dart' as _i5;
 import 'package:universal_milk/features/startup/startup_view.dart' as _i3;
-import 'package:stacked/stacked.dart' as _i1;
-import 'package:stacked_services/stacked_services.dart' as _i11;
 
 class Routes {
   static const homeView = '/home-view';

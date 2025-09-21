@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:universal_milk/app_localizations.dart';
 
 /// Extension on [BuildContext] which makes it easier to access
 /// the current [AppLocalizations].
